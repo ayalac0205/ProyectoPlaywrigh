@@ -1,15 +1,9 @@
 {
-  "name": "proyecto-play",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "install:playwright": "npx playwright install",
+    "test:cucumber": "cucumber-js --require-module ts-node/register --require features/steps/**/*.ts features/**/*.feature --format progress",
+    "test:playwright": "playwright test",
+    "test:headed": "PWDEBUG=1 npm run test:cucumber",
+    "report:open": "playwright show-report reports/playwright"
   }
 }
