@@ -5,7 +5,9 @@
     "test:playwright": "playwright test",
     "test:headed": "PWDEBUG=1 npm run test:cucumber",
     "report:open": "playwright show-report reports/playwright",
-    "report": "node generate-report.js"
+    "report": "node generate-report.js",
+    "test": "npx cucumber-js --require features/steps/**/*.js features --format json:reports/cucumber-report.json",
+    "test:report": "npm run test && npm run report"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.6.0",
