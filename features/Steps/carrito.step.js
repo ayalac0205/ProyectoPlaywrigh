@@ -35,5 +35,4 @@ Then('el producto {string} debe aparecer en el carrito', async function (product
     throw new Error(`El producto "${product}" no aparece en el carrito`);
   }
 
-  await this.browser.close();
 });

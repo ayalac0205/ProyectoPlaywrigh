@@ -44,5 +44,4 @@ When('completo la compra', async function () {
 Then('debo ver la confirmación', async function () {
   const ok = await this.checkoutPage.isConfirmationVisible();
   if (!ok) throw new Error('Confirmación no visible');
-  await this.browser.close();
 });
