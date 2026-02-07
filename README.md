@@ -1,4 +1,4 @@
-IRA A LA RAMA DEVELOP 
+CLONAR E IR RAMA DEVELOP DONDE SE VEN TODO LOS CAMBIOS
 # Proyecto de Automatización E2E con Cucumber + Playwright
 
 ## Descripción
