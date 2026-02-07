@@ -4,6 +4,247 @@
     "elements": [
       {
         "description": "",
+        "id": "carrito-y-proceso-de-compra;agregar-producto-al-carrito-y-ver-el-carrito",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Agregar producto al carrito y ver el carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 253710400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239360700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que abro la página de inicio de sesión",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "inicio sesión con \"standard_user\" y \"secret_sauce\"",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "agrego el producto \"Sauce Labs Backpack\" al carrito",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debo ver 1 artículo en el carrito",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "debo ver el producto \"Sauce Labs Backpack\" en el carrito",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95806299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107495799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "carrito-y-proceso-de-compra;completar-compra-con-datos-válidos",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Completar compra con datos válidos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 227362100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 234902900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "que abro la página de inicio de sesión",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "inicio sesión con \"standard_user\" y \"secret_sauce\"",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "agrego el producto \"Sauce Labs Backpack\" al carrito",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "voy al carrito",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "inicio el checkout con nombre \"Brandon\" apellido \"Perez\" y código postal \"15001\"",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:61"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "debo ver la página de confirmación de pedido",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:67"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "el mensaje de confirmación debe contener \"THANK YOU FOR YOUR ORDER\"",
+            "match": {
+              "location": "features\\steps\\cart_checkout.steps.js:72"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116767699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123831199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "carrito-y-proceso-de-compra",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Carrito y proceso de compra",
+    "tags": [],
+    "uri": "features\\cart_and_checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "inicio-de-sesión-y-página-de-productos;inicio-de-sesión-exitoso-muestra-la-página-de-productos",
         "keyword": "Scenario",
         "line": 4,
@@ -14,7 +255,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 857379400
+              "duration": 249126099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 258537200
             }
           },
           {
@@ -22,12 +271,9 @@
             "keyword": "Given ",
             "line": 5,
             "name": "que abro la página de inicio de sesión",
-            "match": {
-              "location": "features\\steps\\login.step.js:24"
-            },
             "result": {
-              "status": "passed",
-              "duration": 824230900
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -35,12 +281,9 @@
             "keyword": "When ",
             "line": 6,
             "name": "inicio sesión con \"standard_user\" y \"secret_sauce\"",
-            "match": {
-              "location": "features\\steps\\login.step.js:28"
-            },
             "result": {
-              "status": "passed",
-              "duration": 85987900
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -52,8 +295,8 @@
               "location": "features\\steps\\login.step.js:32"
             },
             "result": {
-              "status": "passed",
-              "duration": 2777299
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -61,7 +304,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 113694899
+              "duration": 102465600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121464099
             }
           }
         ],
@@ -80,7 +331,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 227069600
+              "duration": 251085400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 241451600
             }
           },
           {
@@ -88,12 +347,9 @@
             "keyword": "Given ",
             "line": 10,
             "name": "que abro la página de inicio de sesión",
-            "match": {
-              "location": "features\\steps\\login.step.js:24"
-            },
             "result": {
-              "status": "passed",
-              "duration": 549479300
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -101,12 +357,9 @@
             "keyword": "When ",
             "line": 11,
             "name": "inicio sesión con \"locked_out_user\" y \"wrong_password\"",
-            "match": {
-              "location": "features\\steps\\login.step.js:28"
-            },
             "result": {
-              "status": "passed",
-              "duration": 62599200
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -118,8 +371,8 @@
               "location": "features\\steps\\login.step.js:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 5027599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -127,7 +380,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 139548200
+              "duration": 104270799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110004200
             }
           }
         ],
