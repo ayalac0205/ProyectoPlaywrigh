@@ -4,57 +4,56 @@
     "elements": [
       {
         "description": "",
-        "id": "inicio-de-sesión-en-sauce-demo;inicio-de-sesión-con-credenciales-válidas",
-        "keyword": "Escenario",
+        "id": "inicio-de-sesión-y-página-de-productos;inicio-de-sesión-exitoso-muestra-la-página-de-productos",
+        "keyword": "Scenario",
         "line": 4,
-        "name": "Inicio de sesión con credenciales válidas",
+        "name": "Inicio de sesión exitoso muestra la página de productos",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 101540700
+              "duration": 857379400
             }
           },
           {
             "arguments": [],
-            "keyword": "Dado ",
+            "keyword": "Given ",
             "line": 5,
             "name": "que abro la página de inicio de sesión",
             "match": {
-              "location": "features\\steps\\login.step.js:22"
+              "location": "features\\steps\\login.step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 448216900
+              "duration": 824230900
             }
           },
           {
             "arguments": [],
-            "keyword": "Cuando ",
+            "keyword": "When ",
             "line": 6,
             "name": "inicio sesión con \"standard_user\" y \"secret_sauce\"",
             "match": {
-              "location": "features\\steps\\login.step.js:26"
+              "location": "features\\steps\\login.step.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 130069799
+              "duration": 85987900
             }
           },
           {
             "arguments": [],
-            "keyword": "Entonces ",
+            "keyword": "Then ",
             "line": 7,
             "name": "debo ver la página de productos",
             "match": {
-              "location": "features\\steps\\login.step.js:30"
+              "location": "features\\steps\\login.step.js:32"
             },
             "result": {
-              "status": "failed",
-              "duration": 206899,
-              "error_message": "ReferenceError: productsPage is not defined\n    at World.<anonymous> (C:\\Users\\USER\\IdeaProjects\\PROYECTO PLAY\\features\\steps\\login.step.js:31:19)"
+              "status": "passed",
+              "duration": 2777299
             }
           },
           {
@@ -62,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37864100
+              "duration": 113694899
             }
           }
         ],
@@ -71,56 +70,56 @@
       },
       {
         "description": "",
-        "id": "inicio-de-sesión-en-sauce-demo;inicio-de-sesión-con-credenciales-inválidas",
-        "keyword": "Escenario",
+        "id": "inicio-de-sesión-y-página-de-productos;inicio-de-sesión-fallido-muestra-mensaje-de-error",
+        "keyword": "Scenario",
         "line": 9,
-        "name": "Inicio de sesión con credenciales inválidas",
+        "name": "Inicio de sesión fallido muestra mensaje de error",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86714500
+              "duration": 227069600
             }
           },
           {
             "arguments": [],
-            "keyword": "Dado ",
+            "keyword": "Given ",
             "line": 10,
             "name": "que abro la página de inicio de sesión",
             "match": {
-              "location": "features\\steps\\login.step.js:22"
+              "location": "features\\steps\\login.step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 399860199
+              "duration": 549479300
             }
           },
           {
             "arguments": [],
-            "keyword": "Cuando ",
+            "keyword": "When ",
             "line": 11,
             "name": "inicio sesión con \"locked_out_user\" y \"wrong_password\"",
             "match": {
-              "location": "features\\steps\\login.step.js:26"
+              "location": "features\\steps\\login.step.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 70797799
+              "duration": 62599200
             }
           },
           {
             "arguments": [],
-            "keyword": "Entonces ",
+            "keyword": "Then ",
             "line": 12,
             "name": "debo ver un mensaje de error",
             "match": {
-              "location": "features\\steps\\login.step.js:35"
+              "location": "features\\steps\\login.step.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 4998799
+              "duration": 5027599
             }
           },
           {
@@ -128,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31521899
+              "duration": 139548200
             }
           }
         ],
@@ -136,10 +135,10 @@
         "type": "scenario"
       }
     ],
-    "id": "inicio-de-sesión-en-sauce-demo",
+    "id": "inicio-de-sesión-y-página-de-productos",
     "line": 2,
-    "keyword": "Característica",
-    "name": "Inicio de sesión en Sauce Demo",
+    "keyword": "Feature",
+    "name": "Inicio de sesión y página de productos",
     "tags": [],
     "uri": "features\\login.feature"
   }

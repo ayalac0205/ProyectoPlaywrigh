@@ -1,4 +1,4 @@
-class LoginPage {
+class PaginaLogin {
   constructor(page) {
     this.page = page;
     this.url = 'https://www.saucedemo.com/';
@@ -28,4 +28,4 @@ class LoginPage {
   }
 }
 
-module.exports = LoginPage;
+module.exports = PaginaLogin;

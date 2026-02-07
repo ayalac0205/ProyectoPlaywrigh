@@ -1,17 +1,19 @@
 ﻿const { Given, When, Then, Before, After } = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
 const assert = require('assert');
-
-const LoginPage = require('../../src/pages/LoginPage');
+const PaginaLogin = require('../../src/pages/PaginaLogin');
+const PaginaProductos = require('../../src/pages/PaginaProductos');
 
 let browser;
 let page;
 let loginPage;
+let productsPage;
 
 Before(async function () {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: false });
   page = await browser.newPage();
-  loginPage = new LoginPage(page);
+  loginPage = new PaginaLogin(page);
+  productsPage = new PaginaProductos(page);
 });
 
 After(async function () {
